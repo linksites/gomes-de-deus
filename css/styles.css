@@ -13,8 +13,10 @@ a{color:var(--gold);text-decoration:none} a:hover{text-decoration:underline}
 .brand .sub{font-size:11px;color:var(--muted)}
 .menu{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
 .menu a{padding:10px 12px;border-radius:999px}
-.cta{background:var(--gold);color:#111;font-weight:700;border-radius:999px;padding:10px 16px;box-shadow:0 6px 16px rgba(212,175,55,.35)}
-.cta:hover{filter:brightness(1.05);text-decoration:none}
+.cta{position:relative;overflow:hidden;background:linear-gradient(135deg,#f0cb62 0%,var(--gold) 45%,#9c7615 100%);color:#111;font-weight:700;border-radius:999px;padding:10px 16px;box-shadow:0 6px 16px rgba(212,175,55,.35);transition:transform .25s ease, box-shadow .25s ease, filter .25s ease}
+.cta::before{content:"";position:absolute;inset:-120% auto -120% -35%;width:42%;transform:rotate(24deg);background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.45),rgba(255,255,255,0));opacity:0;transition:transform .5s ease, opacity .3s ease}
+.cta:hover{filter:brightness(1.05);text-decoration:none;transform:translateY(-2px);box-shadow:0 14px 32px rgba(212,175,55,.28)}
+.cta:hover::before{opacity:1;transform:translateX(230%) rotate(24deg)}
 .hero{position:relative;overflow:hidden;padding:80px 0 40px;background:radial-gradient(1200px 600px at 70% -20%, rgba(212,175,55,.15), transparent 60%), radial-gradient(800px 400px at -10% 30%, rgba(212,175,55,.08), transparent 60%)}
 .hero-inner{display:grid;grid-template-columns: 1.2fr .8fr;gap:32px;align-items:center}
 .hero h1{font-size:clamp(28px,4vw,48px);margin:0 0 12px}
@@ -37,10 +39,17 @@ a{color:var(--gold);text-decoration:none} a:hover{text-decoration:underline}
 @media (max-width:980px){.contact{grid-template-columns:1fr}}
 .input,textarea{width:100%;padding:12px 14px;border-radius:12px;color:var(--text);border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05)}
 textarea{min-height:120px;resize:vertical}
-button.primary{all:unset;background:var(--gold);color:#111;padding:12px 18px;border-radius:12px;cursor:pointer;font-weight:700;box-shadow:0 8px 20px rgba(212,175,55,.3)}
-button.primary:hover{filter:brightness(1.03)}
+button.primary{all:unset;position:relative;overflow:hidden;background:linear-gradient(135deg,#f0cb62 0%,var(--gold) 45%,#9c7615 100%);color:#111;padding:12px 18px;border-radius:12px;cursor:pointer;font-weight:700;box-shadow:0 8px 20px rgba(212,175,55,.3);transition:transform .25s ease, box-shadow .25s ease, filter .25s ease}
+button.primary:hover{filter:brightness(1.03);transform:translateY(-2px);box-shadow:0 16px 34px rgba(212,175,55,.24)}
+button.primary::before{content:"";position:absolute;inset:-140% auto -140% -30%;width:38%;transform:rotate(22deg);background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.38),rgba(255,255,255,0));opacity:0;transition:transform .55s ease, opacity .3s ease}
+button.primary:hover::before{opacity:1;transform:translateX(260%) rotate(22deg)}
 .footer{padding:28px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.06)}
 .notice{font-size:12px;color:var(--muted)}
+.whatsapp-link{position:relative}
+.whatsapp-link::after,.whatsapp-action::after{content:"";position:absolute;inset:-3px;border-radius:inherit;border:1px solid rgba(37,211,102,.38);box-shadow:0 0 0 0 rgba(37,211,102,.35);pointer-events:none;animation:whatsappPulse 2.8s ease-out infinite}
+.whatsapp-link:hover,.whatsapp-action:hover{box-shadow:0 16px 36px rgba(37,211,102,.2), 0 10px 24px rgba(212,175,55,.22)}
+@keyframes whatsappPulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.34)}70%{box-shadow:0 0 0 12px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+@media (prefers-reduced-motion:reduce){.cta,.cta::before,button.primary,button.primary::before,.whatsapp-link::after,.whatsapp-action::after{transition:none;animation:none}}
 
 /* ===== Mobile menu (hamburger) ===== */
 .burger{display:none;align-items:center;justify-content:center;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:var(--text);padding:10px 12px;border-radius:12px;font-weight:700}
