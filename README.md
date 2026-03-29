@@ -3,7 +3,7 @@
 Landing page institucional estática para o escritório Adriano Gomes de Deus Advocacia, com foco em apresentação profissional, áreas de atuação e geração de contato via WhatsApp.
 
 Site publicado em:
-`https://sergiosrdev.github.io/gomes-de-deus/`
+`https://linksites.github.io/gomes-de-deus/`
 
 ## Estrutura
 
