@@ -4,25 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Adriano Gomes de Deus Advocacia | Belém do Pará</title>
-  <meta name="description" content="Escritório jurídico em Belém do Pará. Criminal, Tribunal do Júri, Previdenciário, Civil, Empresarial e Trabalhista. Atuação em instâncias superiores e advocacia de resultados.">
+  <meta name="description" content="Escritório jurídico em Belém do Pará com atuação estratégica em Direito Criminal, Tribunal do Júri, Previdenciário, Civil, Empresarial e Trabalhista.">
   <link rel="canonical" href="https://linksites.github.io/gomes-de-deus/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Adriano Gomes de Deus Advocacia">
-  <meta property="og:description" content="Escritório jurídico em Belém do Pará, com atuação estratégica em Direito Criminal, Tribunal do Júri e Previdenciário.">
+  <meta property="og:description" content="Atuação jurídica estratégica em Belém do Pará, com foco em Direito Criminal, Tribunal do Júri e Previdenciário.">
   <meta property="og:url" content="https://linksites.github.io/gomes-de-deus/">
   <meta property="og:image" content="https://linksites.github.io/gomes-de-deus/assets/logogd.jpeg">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon.png">
-  <meta name="theme-color" content="#0B0E11">
+  <meta name="theme-color" content="#0a0d12">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="apple-touch-icon" href="assets/favicon.png">
-  <link rel="preload" href="assets/logogd.jpeg" as="image">
-  <link rel="stylesheet" href="css/styles.css?v=20260313-1">
+  <link rel="preload" href="assets/fotoperfil.jpeg" as="image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=20260518-1">
   <script>
     (function () {
-      const savedTheme = localStorage.getItem('theme');
-      const theme = savedTheme === 'light' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', theme);
+      const savedTheme = localStorage.getItem("theme");
+      const theme = savedTheme === "light" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", theme);
     })();
   </script>
   <script type="application/ld+json">
@@ -49,242 +52,444 @@
   <style>@supports(padding:max(0px)){body{padding-bottom:constant(safe-area-inset-bottom);padding-bottom:env(safe-area-inset-bottom)}}</style>
 </head>
 <body>
-<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
-<header class="header">
-  <div class="container nav">
-    <a class="brand" href="#topo" aria-label="Página inicial">
-      <img src="assets/logogd.jpeg" alt="Logomarca AGD Advocacia">
-      <span class="name">ADRIANO GOMES DE DEUS <span class="sub">ADVOCACIA</span></span>
-    </a>
-    <nav class="menu" aria-label="Menu principal">
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#topo" aria-label="Página inicial">
+        <img src="assets/logogd.jpeg" alt="Logomarca AGD Advocacia">
+        <span class="brand-text">
+          <span class="brand-name">Adriano Gomes de Deus</span>
+          <span class="brand-sub">Advocacia estratégica</span>
+        </span>
+      </a>
+
+      <nav class="menu" aria-label="Menu principal">
+        <a href="#perfil">Perfil</a>
+        <a href="#atuacao">Atuação</a>
+        <a href="#metodo">Método</a>
+        <a href="#contato">Contato</a>
+        <a class="cta cta-nav whatsapp-link" href="https://wa.me/5591981122227?text=Olá%2C%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer">Agendar atendimento</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">
+          <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+          <span class="theme-toggle-label">Modo noturno</span>
+        </button>
+        <button id="burger" class="burger" type="button" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Menu
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav id="mobileMenu" class="mobile-menu" aria-label="Menu móvel">
+    <div class="container mobile-menu-inner">
       <a href="#perfil">Perfil</a>
-      <a href="#atuacao">Áreas</a>
-      <a href="#sobre">Sobre</a>
+      <a href="#atuacao">Atuação</a>
+      <a href="#metodo">Método</a>
       <a href="#contato">Contato</a>
-      <a class="cta whatsapp-link" href="https://wa.me/5591981122227?text=Ol%C3%A1%20gostaria%20de%20um%20atendimento" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp</a>
-    </nav>
-    <div class="nav-actions">
-      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">
-        <span class="theme-toggle-icon" aria-hidden="true">☾</span>
-        <span class="theme-toggle-label">Modo noturno</span>
-      </button>
-      <button id="burger" class="burger" type="button" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        Menu
-      </button>
+      <a class="cta whatsapp-link" href="https://wa.me/5591981122227?text=Olá%2C%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer">Agendar atendimento</a>
     </div>
-  </div>
-</header>
-<nav id="mobileMenu" class="mobile-menu" aria-label="Menu móvel">
-  <div class="container">
-    <a href="#perfil">Perfil</a>
-    <a href="#atuacao">Áreas</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#contato">Contato</a>
-    <a class="cta whatsapp-link" href="https://wa.me/5591981122227?text=Ol%C3%A1%20gostaria%20de%20um%20atendimento" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp</a>
-  </div>
-</nav>
-<div id="menuBackdrop" class="backdrop" tabindex="-1"></div>
+  </nav>
+  <div id="menuBackdrop" class="backdrop" tabindex="-1"></div>
 
-<main id="conteudo">
-<section class="hero" id="topo">
-  <div class="container hero-inner">
-    <div class="hero-copy">
-      <span class="eyebrow hero-eyebrow">Atendimento jurídico em Belém/PA e on-line</span>
-      <h1>Atuação jurídica estratégica em Direito Criminal e Previdenciário</h1>
-      <p>Escritório de advocacia em Belém do Pará, com atuação técnica em <strong>Direito Criminal</strong>, <strong>Tribunal do Júri</strong> e <strong>instâncias superiores</strong>. Atendimento também nas áreas <strong>Previdenciária</strong>, <strong>Cível</strong>, <strong>Indenizatória</strong>, <strong>Inventários</strong>, <strong>Contratos</strong>, <strong>Empresarial</strong> e <strong>Trabalhista</strong>.</p>
-      <div class="badges">
-        <span class="badge">+10 anos de atuação</span>
-        <span class="badge">Atendimento on-line em todo o Brasil</span>
-        <span class="badge">Estratégia, técnica e discrição</span>
+  <main id="conteudo">
+    <section class="hero" id="topo">
+      <div class="hero-orb hero-orb-left" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-right" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
       </div>
-      <div class="hero-actions">
-        <a class="cta" href="#contato">Fale com o escritório</a>
-        <a class="badge" href="#atuacao">Ver áreas de atuação</a>
+
+      <div class="container hero-inner">
+        <div class="hero-copy" data-reveal>
+          <span class="eyebrow">Belém/PA • atendimento presencial e on-line</span>
+          <h1>Defesa jurídica com presença, técnica e sofisticação estratégica.</h1>
+          <p class="hero-lead">Atuação jurídica orientada por rigor técnico, discrição e comunicação clara em casos que exigem preparo real. O escritório conduz demandas em <strong>Direito Criminal</strong>, <strong>Tribunal do Júri</strong>, <strong>instâncias superiores</strong> e <strong>Direito Previdenciário</strong>, além de suporte qualificado nas áreas <strong>Cível</strong>, <strong>Empresarial</strong> e <strong>Trabalhista</strong>.</p>
+
+          <div class="hero-actions">
+            <a class="cta cta-lg whatsapp-link" href="https://wa.me/5591981122227?text=Olá%2C%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer">Falar com o escritório</a>
+            <a class="ghost-button" href="#atuacao">Explorar áreas de atuação</a>
+          </div>
+
+          <div class="hero-signals">
+            <span class="signal-pill">Desde 2014</span>
+            <span class="signal-pill">Atendimento reservado</span>
+            <span class="signal-pill">Condução técnica e personalizada</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel card" data-reveal data-reveal-delay="120">
+          <div class="hero-panel-top">
+            <div class="hero-portrait-shell">
+              <img class="hero-photo" src="assets/fotoperfil.jpeg" alt="Adriano Gomes de Deus em retrato profissional">
+            </div>
+            <div class="hero-panel-copy">
+              <span class="panel-kicker">Adriano Gomes de Deus</span>
+              <h2>Advocacia autoral para situações que pedem precisão.</h2>
+              <p>Atendimento jurídico com foco em análise criteriosa, definição estratégica e acompanhamento próximo em cada etapa do caso.</p>
+            </div>
+          </div>
+
+          <div class="hero-panel-metrics">
+            <article class="metric-card">
+              <strong>Criminal</strong>
+              <span>Defesa técnica e acompanhamento processual.</span>
+            </article>
+            <article class="metric-card">
+              <strong>Tribunal do Júri</strong>
+              <span>Preparação sólida para plenário e sustentações.</span>
+            </article>
+            <article class="metric-card">
+              <strong>Previdenciário</strong>
+              <span>Estratégia consultiva e contenciosa com clareza.</span>
+            </article>
+          </div>
+        </aside>
       </div>
-    </div>
-    <div class="card hero-card">
-      <img class="hero-photo" src="assets/fotoperfil.jpeg" alt="Adriano Gomes de Deus">
-      <p class="notice hero-notice">Atendimento presencial em Belém/PA e on-line, mediante agendamento prévio.</p>
-      <div class="kpis">
-        <div class="kpi"><b>24h</b><span>Canal de contato</span></div>
-        <div class="kpi"><b>100%</b><span>Transparência</span></div>
-        <div class="kpi"><b>Estratégia</b><span>foco no caso</span></div>
-        <div class="kpi"><b>Sigilo</b><span>e ética</span></div>
+
+      <div class="container trust-strip" data-reveal data-reveal-delay="180">
+        <div class="trust-item">
+          <span class="trust-label">Atuação</span>
+          <strong>Belém/PA e Brasil</strong>
+        </div>
+        <div class="trust-item">
+          <span class="trust-label">Abordagem</span>
+          <strong>Estratégia, discrição e proximidade</strong>
+        </div>
+        <div class="trust-item">
+          <span class="trust-label">Foco</span>
+          <strong>Casos sensíveis e decisões de alto impacto</strong>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="section profile-section" id="perfil">
-  <div class="container profile-layout">
-    <div class="profile-copy">
-      <span class="eyebrow">Perfil profissional</span>
-      <h2 class="section-title">Dr. Adriano Gomes de Deus</h2>
-      <p class="desc">Advogado com atuação no <strong>Tribunal do Júri</strong>, dedicado à condução técnica de defesas, sustentações em plenário e construção de teses consistentes para casos que exigem preparo, firmeza e precisão jurídica.</p>
-      <p class="desc">Pós-graduado em <strong>Direito Penal e Processo Penal</strong> e em <strong>Direito Previdenciário</strong>, o Dr. Adriano Gomes de Deus reúne formação especializada para conduzir demandas criminais e previdenciárias com clareza, responsabilidade e acompanhamento próximo ao cliente.</p>
-      <div class="profile-highlights">
-        <article class="card profile-point">
-          <strong>Atuação em plenário</strong>
-          <span>Estruturação de defesa, sustentação oral e preparação jurídica voltada ao Tribunal do Júri.</span>
-        </article>
-        <article class="card profile-point">
-          <strong>Formação especializada</strong>
-          <span>Base acadêmica sólida para atuação em casos sensíveis, urgentes e de maior complexidade.</span>
-        </article>
-        <article class="card profile-point">
-          <strong>Visão multidisciplinar</strong>
-          <span>Atuação técnica em aposentadorias, benefícios, revisões e demandas contra o INSS.</span>
-        </article>
+    <section class="section highlights-section" id="sobre">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Direção do escritório</span>
+          <h2 class="section-title">Uma experiência jurídica mais serena, clara e estrategicamente conduzida.</h2>
+          <p class="section-desc">O redesenho institucional do atendimento parte de três pilares: leitura profunda do caso, comunicação objetiva e posicionamento técnico consistente em cada movimento processual.</p>
+        </div>
+
+        <div class="highlights-grid">
+          <article class="feature-card card" data-reveal>
+            <span class="feature-index">01</span>
+            <h3>Diagnóstico preciso</h3>
+            <p>Cada demanda começa pela análise dos fatos, dos documentos e do contexto processual para definir o melhor caminho com responsabilidade.</p>
+          </article>
+          <article class="feature-card card" data-reveal data-reveal-delay="80">
+            <span class="feature-index">02</span>
+            <h3>Presença técnica</h3>
+            <p>A condução do caso prioriza firmeza argumentativa, construção de tese e atuação compatível com a complexidade jurídica envolvida.</p>
+          </article>
+          <article class="feature-card card" data-reveal data-reveal-delay="160">
+            <span class="feature-index">03</span>
+            <h3>Relação de confiança</h3>
+            <p>O cliente acompanha com clareza o estágio da demanda, os riscos, os próximos passos e o racional estratégico de cada decisão.</p>
+          </article>
+        </div>
       </div>
-      <div class="profile-stats">
-        <div class="card profile-stat"><b>Tribunal do Júri</b><span>Atuação técnica em plenário</span></div>
-        <div class="card profile-stat"><b>Penal e Processo Penal</b><span>Formação especializada</span></div>
-        <div class="card profile-stat"><b>Direito Previdenciário</b><span>Atuação consultiva e contenciosa</span></div>
+    </section>
+
+    <section class="section profile-section" id="perfil">
+      <div class="container profile-layout">
+        <div class="profile-copy" data-reveal>
+          <span class="eyebrow">Perfil profissional</span>
+          <h2 class="section-title">Dr. Adriano Gomes de Deus</h2>
+          <p class="section-desc">Advogado com atuação no <strong>Tribunal do Júri</strong>, dedicado à condução técnica de defesas, sustentações em plenário e construção de teses consistentes para casos que exigem preparo, firmeza e precisão jurídica.</p>
+          <p class="section-desc">Com pós-graduação em <strong>Direito Penal e Processo Penal</strong> e em <strong>Direito Previdenciário</strong>, reúne formação especializada para conduzir demandas criminais e previdenciárias com clareza, responsabilidade e acompanhamento próximo.</p>
+
+          <div class="profile-statements">
+            <article class="statement-card card">
+              <strong>Atuação em plenário</strong>
+              <span>Estruturação de defesa, sustentação oral e presença jurídica orientada ao Tribunal do Júri.</span>
+            </article>
+            <article class="statement-card card">
+              <strong>Formação especializada</strong>
+              <span>Base acadêmica sólida para casos urgentes, sensíveis e de maior complexidade.</span>
+            </article>
+            <article class="statement-card card">
+              <strong>Visão multidisciplinar</strong>
+              <span>Atuação técnica em aposentadorias, benefícios, revisões e demandas perante o INSS.</span>
+            </article>
+          </div>
+        </div>
+
+        <aside class="profile-aside" data-reveal data-reveal-delay="120">
+          <div class="profile-figure card">
+            <img src="assets/fotoperfil-perfil.jpeg" alt="Retrato profissional do Dr. Adriano Gomes de Deus">
+            <div class="profile-caption">
+              <strong>Atendimento personalizado</strong>
+              <span>Presencial em Belém/PA e com suporte on-line para clientes em todo o Brasil.</span>
+            </div>
+          </div>
+
+          <div class="profile-matrix card">
+            <div class="matrix-row">
+              <span>Direito Penal</span>
+              <strong>Estratégia e defesa</strong>
+            </div>
+            <div class="matrix-row">
+              <span>Processo Penal</span>
+              <strong>Rigor técnico</strong>
+            </div>
+            <div class="matrix-row">
+              <span>Previdenciário</span>
+              <strong>Consultivo e contencioso</strong>
+            </div>
+          </div>
+        </aside>
       </div>
-    </div>
-    <aside class="profile-figure card">
-      <img src="assets/fotoperfil-perfil.jpeg" alt="Retrato profissional do Dr. Adriano Gomes de Deus">
-      <div class="profile-caption">
-        <strong>Adriano Gomes de Deus</strong>
-        <span>Atendimento jurídico técnico e personalizado em Belém/PA, com suporte on-line para clientes em todo o Brasil.</span>
+    </section>
+
+    <section class="section areas-section" id="atuacao">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Áreas de atuação</span>
+          <h2 class="section-title">Atuação jurídica desenhada para decisões delicadas e demandas complexas.</h2>
+          <p class="section-desc">O escritório atua com ênfase em matéria criminal, Tribunal do Júri, instâncias superiores e Previdenciário, além de suporte em demandas cíveis, empresariais e trabalhistas.</p>
+        </div>
+
+        <div class="areas-grid">
+          <article class="area-card card" data-reveal>
+            <span class="area-kicker">Defesa estratégica</span>
+            <h3>Criminal e Tribunal do Júri</h3>
+            <p>Defesa técnica, acompanhamento processual, memoriais, recursos e atuação estruturada em plenário.</p>
+          </article>
+          <article class="area-card card" data-reveal data-reveal-delay="60">
+            <span class="area-kicker">Medidas de urgência</span>
+            <h3>Instâncias Superiores</h3>
+            <p>Habeas corpus, recursos constitucionais e medidas urgentes perante STJ e STF.</p>
+          </article>
+          <article class="area-card card" data-reveal data-reveal-delay="120">
+            <span class="area-kicker">Proteção social</span>
+            <h3>Direito Previdenciário</h3>
+            <p>Aposentadorias, benefícios, revisões, BPC/LOAS e demandas administrativas ou judiciais contra o INSS.</p>
+          </article>
+          <article class="area-card card" data-reveal>
+            <span class="area-kicker">Responsabilidade civil</span>
+            <h3>Cível e Indenizações</h3>
+            <p>Reparação por danos morais e materiais, obrigações, contratos e controvérsias patrimoniais.</p>
+          </article>
+          <article class="area-card card" data-reveal data-reveal-delay="60">
+            <span class="area-kicker">Organização patrimonial</span>
+            <h3>Inventários e Família</h3>
+            <p>Inventário judicial e extrajudicial, partilhas e orientação patrimonial em situações familiares sensíveis.</p>
+          </article>
+          <article class="area-card card" data-reveal data-reveal-delay="120">
+            <span class="area-kicker">Atuação empresarial</span>
+            <h3>Empresarial e Trabalhista</h3>
+            <p>Consultoria preventiva, elaboração contratual, defesa judicial e acompanhamento de reclamações trabalhistas.</p>
+          </article>
+        </div>
       </div>
-    </aside>
-  </div>
-</section>
+    </section>
 
-<section class="section" id="atuacao">
-  <div class="container">
-    <span class="eyebrow">Áreas de atuação</span>
-    <h2 class="section-title">Atendimento jurídico com atuação técnica e estratégica</h2>
-    <p class="desc section-desc">Atuação jurídica com ênfase em matéria criminal, Tribunal do Júri, instâncias superiores e Direito Previdenciário, além de suporte em demandas cíveis, empresariais e trabalhistas.</p>
-    <div class="grid">
-      <article class="card area"><h3>Criminal &amp; Tribunal do Júri</h3><p>Defesa técnica, acompanhamento processual, memoriais, recursos e atuação estratégica em plenário.</p></article>
-      <article class="card area"><h3>Instâncias Superiores</h3><p>Habeas corpus, recursos constitucionais e medidas urgentes perante STJ e STF.</p></article>
-      <article class="card area"><h3>Previdenciário</h3><p>Aposentadorias, benefícios, revisões, BPC/LOAS e demandas administrativas ou judiciais contra o INSS.</p></article>
-      <article class="card area"><h3>Cível &amp; Indenizações</h3><p>Responsabilidade civil, reparação por danos morais e materiais, contratos e obrigações.</p></article>
-      <article class="card area"><h3>Inventários &amp; Família</h3><p>Inventário judicial e extrajudicial, partilhas e orientação patrimonial em situações familiares sensíveis.</p></article>
-      <article class="card area"><h3>Empresarial &amp; Trabalhista</h3><p>Consultoria preventiva, elaboração contratual, defesa judicial e acompanhamento de reclamações trabalhistas.</p></article>
-    </div>
-  </div>
-</section>
+    <section class="section method-section" id="metodo">
+      <div class="container method-layout">
+        <div class="method-copy" data-reveal>
+          <span class="eyebrow">Método de atendimento</span>
+          <h2 class="section-title">Um fluxo de trabalho elegante na forma e firme no conteúdo.</h2>
+          <p class="section-desc">A experiência do cliente é tratada com o mesmo cuidado dedicado à estratégia jurídica: escuta qualificada, definição do caminho processual e comunicação clara sobre cada etapa.</p>
+        </div>
 
-<section class="section" id="sobre">
-  <div class="container about">
-    <div class="card panel about-panel">
-      <span class="eyebrow">Sobre o escritório</span>
-      <h2 class="section-title">Atendimento próximo, análise criteriosa e condução responsável</h2>
-      <p class="desc section-desc">Fundado por Adriano Gomes de Deus, o escritório une atuação prática, rigor técnico e atendimento personalizado. Cada demanda é conduzida com análise cuidadosa dos autos, definição estratégica e comunicação objetiva com o cliente.</p>
-      <ul class="about-list">
-        <li>Atendimento presencial em Belém/PA e on-line para todo o país.</li>
-        <li>Atuação firme, ética e alinhada ao devido processo legal.</li>
-        <li>Acompanhamento próximo, com orientação clara sobre etapas e encaminhamentos do caso.</li>
-      </ul>
-    </div>
-    <img class="about-brand" src="assets/logogd.jpeg" alt="Marca do escritório em dourado">
-  </div>
-</section>
+        <div class="timeline" data-reveal data-reveal-delay="120">
+          <article class="timeline-step card">
+            <span class="timeline-number">01</span>
+            <h3>Escuta inicial</h3>
+            <p>Compreensão objetiva da situação, dos documentos disponíveis e da urgência envolvida.</p>
+          </article>
+          <article class="timeline-step card">
+            <span class="timeline-number">02</span>
+            <h3>Análise e tese</h3>
+            <p>Leitura técnica do caso para definir viabilidade, riscos, estratégia e prioridades.</p>
+          </article>
+          <article class="timeline-step card">
+            <span class="timeline-number">03</span>
+            <h3>Condução responsável</h3>
+            <p>Atuação jurídica com posicionamento consistente, discrição e acompanhamento próximo.</p>
+          </article>
+          <article class="timeline-step card">
+            <span class="timeline-number">04</span>
+            <h3>Comunicação contínua</h3>
+            <p>Atualizações objetivas sobre andamento, próximos passos e decisões relevantes do processo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<section class="section" id="contato">
-  <div class="container contact">
-    <div class="card panel">
-      <span class="eyebrow">Contato</span>
-      <h2 class="section-title">Solicite atendimento com agendamento prévio</h2>
-      <form id="contactForm" name="contato">
-        <label for="nome">Nome</label>
-        <input class="input" id="nome" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required>
+    <section class="section contact-section" id="contato">
+      <div class="container contact-layout">
+        <div class="contact-intro card" data-reveal>
+          <span class="eyebrow">Contato</span>
+          <h2 class="section-title">Solicite um atendimento com agendamento prévio.</h2>
+          <p class="section-desc">Preencha seus dados para abrir uma conversa no WhatsApp do escritório com uma mensagem já estruturada. Se preferir, também é possível entrar em contato por e-mail.</p>
 
-        <label for="assunto">Assunto</label>
-        <input class="input" id="assunto" name="assunto" type="text" placeholder="Ex.: Consulta criminal" autocomplete="organization-title" required>
+          <form id="contactForm" name="contato">
+            <label for="nome">Nome</label>
+            <input class="input" id="nome" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required>
 
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" placeholder="Conte resumidamente sua necessidade"></textarea>
+            <label for="assunto">Assunto</label>
+            <input class="input" id="assunto" name="assunto" type="text" placeholder="Ex.: Consulta criminal" autocomplete="organization-title" required>
 
-        <button class="primary whatsapp-action" type="submit">Enviar no WhatsApp</button>
-        <p class="notice">Ao enviar, você será direcionado ao WhatsApp do escritório.</p>
-      </form>
-    </div>
-    <div class="card panel contact-panel">
-      <h3>Atendimento</h3>
-      <p class="contact-line"><strong>Belém do Pará</strong> • Atendimento presencial em Belém/PA e consultas on-line para todo o Brasil.</p>
-      <p class="contact-line">WhatsApp para agendamentos: <a class="whatsapp-link" href="https://wa.me/5591981122227" target="_blank" rel="noopener noreferrer">(+55) 91 98112-2227</a></p>
-      <p class="contact-line">E-mail para contato: <a href="mailto:adrianodeusadv@gmail.com">adrianodeusadv@gmail.com</a></p>
-      <p class="notice">Horários somente com agendamento prévio via WhatsApp ou e-mail.</p>
-      <iframe class="map-frame" title="Mapa de Belém do Pará" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Bel%C3%A9m%20-%20PA&output=embed"></iframe>
-    </div>
-  </div>
-</section>
-</main>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte resumidamente sua necessidade"></textarea>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-row">
+            <button class="primary whatsapp-action" type="submit">Enviar no WhatsApp</button>
+            <p class="notice">Ao enviar, você será direcionado ao WhatsApp do escritório.</p>
+          </form>
+        </div>
+
+        <aside class="contact-aside" data-reveal data-reveal-delay="120">
+          <div class="contact-card card">
+            <span class="panel-kicker">Canal direto</span>
+            <h3>Atendimento em Belém do Pará e on-line em todo o Brasil.</h3>
+            <p class="contact-line">WhatsApp para agendamentos: <a class="whatsapp-link" href="https://wa.me/5591981122227" target="_blank" rel="noopener noreferrer">(+55) 91 98112-2227</a></p>
+            <p class="contact-line">E-mail: <a href="mailto:adrianodeusadv@gmail.com">adrianodeusadv@gmail.com</a></p>
+            <p class="notice">Horários somente com agendamento prévio via WhatsApp ou e-mail.</p>
+          </div>
+
+          <div class="map-card card">
+            <span class="panel-kicker">Localização de referência</span>
+            <iframe class="map-frame" title="Mapa de Belém do Pará" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Bel%C3%A9m%20-%20PA&output=embed"></iframe>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
       <span>&copy; <span id="year"></span> Adriano Gomes de Deus Advocacia</span>
       <span class="notice">Informações profissionais disponíveis mediante solicitação.</span>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  const root = document.documentElement;
-  const body = document.body;
-  const themeToggle = document.getElementById('themeToggle');
-  const themeMeta = document.querySelector('meta[name="theme-color"]');
-  const contactForm = document.getElementById('contactForm');
-  const burger = document.getElementById('burger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const backdrop = document.getElementById('menuBackdrop');
-  function applyTheme(theme){
-    const isLight = theme === 'light';
-    root.setAttribute('data-theme', isLight ? 'light' : 'dark');
-    themeToggle?.setAttribute('aria-pressed', String(isLight));
-    const icon = themeToggle?.querySelector('.theme-toggle-icon');
-    const label = themeToggle?.querySelector('.theme-toggle-label');
-    if (icon) icon.textContent = isLight ? '\u2600' : '\u263E';
-    if (label) label.textContent = isLight ? 'Modo diurno' : 'Modo noturno';
-    if (themeMeta) themeMeta.setAttribute('content', isLight ? '#f5efe1' : '#0B0E11');
-  }
-  applyTheme(root.getAttribute('data-theme') || 'dark');
-  themeToggle?.addEventListener('click', () => {
-    const nextTheme = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-    localStorage.setItem('theme', nextTheme);
-    applyTheme(nextTheme);
-  });
-  function buildWhatsAppLink(){
-    const nome = document.getElementById('nome').value.trim();
-    const assunto = document.getElementById('assunto').value.trim();
-    const mensagem = document.getElementById('mensagem').value.trim();
-    const texto = [
-      `Olá, sou ${nome}.`,
-      `Assunto: ${assunto}.`,
-      mensagem
-    ].filter(Boolean).join(' ');
-    const fone = "5591981122227";
-    return `https://wa.me/${fone}?text=${encodeURIComponent(texto)}`;
-  }
-  contactForm?.addEventListener('submit', event => {
-    event.preventDefault();
-    if (!contactForm.reportValidity()) return;
-    window.open(buildWhatsAppLink(), '_blank', 'noopener,noreferrer');
-  });
-  function toggleMenu(force){
-    if (!mobileMenu || !backdrop) return;
-    const willOpen = force !== undefined ? force : !mobileMenu.classList.contains('open');
-    mobileMenu.classList.toggle('open', willOpen);
-    backdrop.classList.toggle('show', willOpen);
-    body.classList.toggle('menu-open', willOpen);
-    if (burger) burger.setAttribute('aria-expanded', String(willOpen));
-    if (willOpen) mobileMenu.querySelector('a')?.focus();
-  }
-  burger?.addEventListener('click', () => toggleMenu());
-  backdrop?.addEventListener('click', () => toggleMenu(false));
-  window.addEventListener('keydown', e => { if(e.key === 'Escape') toggleMenu(false); });
-  mobileMenu?.addEventListener('click', e => { if(e.target.tagName === 'A') toggleMenu(false); });
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 820) toggleMenu(false);
-  });
-</script>
+  <a class="floating-whatsapp whatsapp-link" href="https://wa.me/5591981122227?text=Olá%2C%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
+    WhatsApp
+  </a>
 
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const root = document.documentElement;
+    const body = document.body;
+    const themeToggle = document.getElementById("themeToggle");
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    const contactForm = document.getElementById("contactForm");
+    const burger = document.getElementById("burger");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const backdrop = document.getElementById("menuBackdrop");
+    const progressBar = document.getElementById("progressBar");
+    const revealItems = document.querySelectorAll("[data-reveal]");
+    const hero = document.querySelector(".hero");
+
+    function applyTheme(theme) {
+      const isLight = theme === "light";
+      root.setAttribute("data-theme", isLight ? "light" : "dark");
+      themeToggle?.setAttribute("aria-pressed", String(isLight));
+      const icon = themeToggle?.querySelector(".theme-toggle-icon");
+      const label = themeToggle?.querySelector(".theme-toggle-label");
+      if (icon) icon.textContent = isLight ? "\u2600" : "\u263E";
+      if (label) label.textContent = isLight ? "Modo diurno" : "Modo noturno";
+      if (themeMeta) themeMeta.setAttribute("content", isLight ? "#f4ecde" : "#0a0d12");
+    }
+
+    applyTheme(root.getAttribute("data-theme") || "dark");
+
+    themeToggle?.addEventListener("click", () => {
+      const nextTheme = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+      localStorage.setItem("theme", nextTheme);
+      applyTheme(nextTheme);
+    });
+
+    function buildWhatsAppLink() {
+      const nome = document.getElementById("nome").value.trim();
+      const assunto = document.getElementById("assunto").value.trim();
+      const mensagem = document.getElementById("mensagem").value.trim();
+      const texto = [
+        `Olá, sou ${nome}.`,
+        `Assunto: ${assunto}.`,
+        mensagem
+      ].filter(Boolean).join(" ");
+      return `https://wa.me/5591981122227?text=${encodeURIComponent(texto)}`;
+    }
+
+    contactForm?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (!contactForm.reportValidity()) return;
+      window.open(buildWhatsAppLink(), "_blank", "noopener,noreferrer");
+    });
+
+    function toggleMenu(force) {
+      if (!mobileMenu || !backdrop) return;
+      const willOpen = force !== undefined ? force : !mobileMenu.classList.contains("open");
+      mobileMenu.classList.toggle("open", willOpen);
+      backdrop.classList.toggle("show", willOpen);
+      body.classList.toggle("menu-open", willOpen);
+      if (burger) burger.setAttribute("aria-expanded", String(willOpen));
+      if (willOpen) mobileMenu.querySelector("a")?.focus();
+    }
+
+    burger?.addEventListener("click", () => toggleMenu());
+    backdrop?.addEventListener("click", () => toggleMenu(false));
+    window.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") toggleMenu(false);
+    });
+    mobileMenu?.addEventListener("click", (event) => {
+      if (event.target.tagName === "A") toggleMenu(false);
+    });
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 820) toggleMenu(false);
+    });
+
+    function updateProgressBar() {
+      if (!progressBar) return;
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+      progressBar.style.transform = `scaleX(${Math.min(Math.max(progress / 100, 0), 1)})`;
+    }
+
+    window.addEventListener("scroll", updateProgressBar, { passive: true });
+    updateProgressBar();
+
+    const revealObserver = "IntersectionObserver" in window
+      ? new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const delay = Number(entry.target.getAttribute("data-reveal-delay") || 0);
+            window.setTimeout(() => entry.target.classList.add("is-visible"), delay);
+            observer.unobserve(entry.target);
+          });
+        }, { threshold: 0.16 })
+      : null;
+
+    revealItems.forEach((item) => {
+      if (revealObserver) {
+        revealObserver.observe(item);
+      } else {
+        item.classList.add("is-visible");
+      }
+    });
+
+    if (hero && window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+      hero.addEventListener("pointermove", (event) => {
+        const rect = hero.getBoundingClientRect();
+        const x = ((event.clientX - rect.left) / rect.width) - 0.5;
+        const y = ((event.clientY - rect.top) / rect.height) - 0.5;
+        hero.style.setProperty("--pointer-x", x.toFixed(3));
+        hero.style.setProperty("--pointer-y", y.toFixed(3));
+      });
+      hero.addEventListener("pointerleave", () => {
+        hero.style.removeProperty("--pointer-x");
+        hero.style.removeProperty("--pointer-y");
+      });
+    }
+  </script>
 </body>
 </html>
